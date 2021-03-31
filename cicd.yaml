@@ -133,8 +133,8 @@ stages:
  - stage: Deploy
    jobs:
    - job: Deploy
-     #pool:
-       #vmImage: 'vs2017-win2016'
+     pool:
+       vmImage: 'ubuntu-16.04'
      steps:
 
      - task: DownloadBuildArtifacts@0
